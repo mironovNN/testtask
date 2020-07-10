@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS request
+(
+    id INTEGER PRIMARY KEY ,
+    idUser BIGSERIAL NOT NULL ,
+    description VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS users
+(
+    id INTEGER PRIMARY KEY ,
+    name VARCHAR(200) NOT NULL
+);
+
+
